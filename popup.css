@@ -1,0 +1,85 @@
+body {
+    width: 380px;
+    padding: 18px 16px 16px 16px;
+    font-family: system-ui, sans-serif;
+    color: #e3eaf3;
+    margin: 0;
+    min-height: 110px;
+    background: rgba(28, 27, 34, 0.96); /* Firefox Proton UI background */
+    border-radius: 14px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+    border: 1px solid rgba(44, 62, 80, 0.22);
+    backdrop-filter: blur(6px);
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.2s, background 0.2s;
+}
+
+.media-info-card {
+    position: static;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+    min-height: unset;
+    overflow: visible;
+    margin-bottom: 18px;
+}
+.media-info-card:last-child {
+    margin-bottom: 0;
+}
+
+.media-content-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.media-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+.media-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 2px;
+}
+.media-artist {
+    font-size: 15px;
+    color: #90caf9;
+}
+.media-artwork {
+    margin-left: 18px;
+    display: flex;
+    align-items: center;
+}
+.media-artwork img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.18);
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    background: #181c23;
+    border: 1px solid #263245;
+}
+.media-progress-bar {
+    width: 100%;
+    height: 7px;
+    background: #232a36;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #263245;
+    /* Remove position, left, bottom, margin */
+    margin-top: 6px;
+}
+.media-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #64b5f6 0%, #1976d2 100%);
+    width: 0%;
+    transition: width 0.3s;
+}
